@@ -32,14 +32,12 @@ int main() {
    * #define
    *  it is a preprocessor directive, where ever the identifier name is used it
    * gets replaced with the given value
-   * its also like constant slightly different
-   * there is no direct method to change its value
+   * its also like constant , its value cannot be changed
+   * we do not end line with semicolon in #define statement
    */
 
-#define val 20;
-
-  int varUsingDefine = val;
-  printf("val %d\n", varUsingDefine);
+#define val 20
+  printf("val %d\n", val);
 
   return 0;
 }
