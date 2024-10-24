@@ -7,7 +7,7 @@ int main() {
 
   // storing number, in this declaration method we can update the values later
   // too
-  int a; // declaration, 4 bytes reserverd for "a" variable
+  int a; // declaration, memories reserverd for "a" variable
   a = 9; // initialization
 
   int b = 100; // variable declaration and initialization
