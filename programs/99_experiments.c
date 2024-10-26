@@ -10,6 +10,14 @@ int main() {
   printf("The value of a is: %d\n", a);
   printf("The value of b is: %d\n", b);
 
+  int varWithNoValue;
+  printf("This got printed when printing int var without value: %d\n",
+         varWithNoValue);
+
+  char A = 'N';
+  char B = 'N';
+  printf("A==B: %d\n", A == B);
+
   return 0;
 }
 char trll() { return 'x'; }
