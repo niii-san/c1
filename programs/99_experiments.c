@@ -1,6 +1,11 @@
 #include <stdio.h>
 
+// either define the function above main here or provide here infromation like
+// the function interface here;
+void hello();
+
 int main() {
+  hello();
 
   printf("Tests\n");
 
@@ -20,4 +25,4 @@ int main() {
 
   return 0;
 }
-char trll() { return 'x'; }
+void hello() { printf("hello from hello function!\n"); }
