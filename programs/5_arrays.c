@@ -41,5 +41,10 @@ int main() {
     }
   }
 
+    char myName[] ="nishan";
+    printf("my name is %s\n",myName);
+    printf("memory address of myName is %p\n",&myName);
+    
+
   return 0;
 }
