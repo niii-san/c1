@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // this function directly manipulates the original age instead of copying
-// copying 
+// copying
 void updateAge(int *ageAddress, int newAge) { *ageAddress = newAge; }
 
 int main() {
@@ -16,6 +16,14 @@ int main() {
 
   printf("Memory address of x is: %p\n", pX);
   printf("Value thats in the address is: %d\n", *pX);
+
+  int myArr[] = {1, 2, 3, 4, 5};
+  int *aP = myArr;
+  printf("Memory address of myArr is:%p\n", aP);
+
+  printf("Second value of myArr: %d\n", *(aP + 1));
+  printf("Memory address of second value: %p\n", &myArr[1]);
+  printf("adding 1 to memory address of first element returned: %p\n", aP + 1);
 
   int age = 10;
   printf("Age before %d\n", age);
@@ -33,7 +41,6 @@ int main() {
   printf("Addrress of pointer that is pointing to luckyNumber: %p\n",
          pointerOfPointerOfLuckyNumber);
   printf("Actual luckyNumber: %d", *(*pointerOfPointerOfLuckyNumber));
-
 
   return 0;
 }
